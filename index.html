@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Adoption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+
+<div class="loading">
+  <span class="paw paw1">🐾</span>
+ <span class="paw paw2">🐾</span> 
+  <span class="text">Loading Love</span>
+  <span class="dots"></span>
+</div>
+
+<br>
+
+
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos/pets.mov" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <!-- <h1 class="hero-title">All pets deserve a happy home</h1> -->
+   <h1 class="hero-title">
+  <span id="typing"></span>
+</h1>
+
+    <p class="hero-sub">Adopt • Love • Care</p>
+    <button class="hero-btn"> 👉 Click Here </button>
+    <div class="scroll-down">⬇</div>
+  </div>
+</section>
+
+
+
+<header>
+  <h1> Pet Adoption Center 🐾</h1>
+  <p>Give a loving home to a pet</p>
+</header>
+
+
+  <nav>
+  <a href="#">Home</a>
+  <a href="#">Pets</a>
+  <a href="#">Adopt</a>
+  <a href="#">Contact</a>
+</nav>
+<br><br>
+
+
+<section class="quote-slider">
+  <div class="quote active">“Saving one animal 🐶🐱 won’t change the 🌍 world, but it will change the world for that animal.”❤️ 🐾</div>
+</section>
+
+
+<section class="pets">
+
+  <div class="card">
+    <img src="images/dog1.jpg" alt="Dog">
+     <h3>Bruno</h3>
+    <ul class="pet-info">
+      <li><strong>Age:</strong> 1.5 Year</li>
+      <li><strong>Gender:</strong> Male</li>
+      <li><strong>Location:</strong> Mumbai</li>
+      <li><strong>Adoption Fee:</strong> ₹1000</li>
+      <li><strong>Vaccinated:</strong> ✅</li>
+    </ul>
+    <p class="pet-desc">
+      Bruno is calm, affectionate and loves indoor life.
+      He is litter-trained and apartment friendly.
+    </p>
+   <button onclick="selectPet('Bruno')">Adopt Me</button>
+  </div>
+
+  <div class="card">
+    <img src="images/cat1.jpg" alt="Cat">
+    <h3>Kitty</h3>
+    <ul class="pet-info">
+      <li><strong>Age:</strong> 1 Year</li>
+      <li><strong>Gender:</strong> Female</li>
+      <li><strong>Location:</strong> Pune</li>
+      <li><strong>Adoption Fee:</strong> ₹2000</li>
+      <li><strong>Vaccinated:</strong> ✅</li>
+    </ul>
+    <p class="pet-desc">
+      Kitty is calm, affectionate and loves indoor life.
+      She is litter-trained and apartment friendly.
+    </p>
+    <button onclick="selectPet('Kitty')">Adopt Me</button>
+  </div>
+
+  <div class="card">
+    <img src="images/dog2.jpg" alt="Dog">
+    <h3>Rocky</h3>
+    <ul class="pet-info">
+      <li><strong>Age:</strong> 9 Months</li>
+      <li><strong>Gender:</strong> Male</li>
+      <li><strong>Location:</strong> Nanded</li>
+      <li><strong>Adoption Fee:</strong> ₹2500</li>
+      <li><strong>Vaccinated:</strong> ✅</li>
+    </ul>
+    <p class="pet-desc">
+      Rocky is calm, affectionate and loves indoor life.
+      he is litter-trained and apartment friendly.
+    </p>
+    <button onclick="selectPet('Rocky')">Adopt Me</button>
+  </div>
+
+  <div class="card">
+    <img src="images/cat1.jpg" alt="cat1">
+    <h3>Snowy</h3>
+    <ul class="pet-info">
+      <li><strong>Age:</strong> 6 Months</li>
+      <li><strong>Gender:</strong> Female</li>
+      <li><strong>Location:</strong> Thane</li>
+      <li><strong>Adoption Fee:</strong> ₹1800</li>
+      <li><strong>Vaccinated:</strong> ✅</li>
+    </ul>
+    <p class="pet-desc">
+      Snowy is calm, affectionate and loves indoor life.
+      She is litter-trained and apartment friendly.
+    </p>
+    <button onclick="selectPet('Snowy')">Adopt Me</button>
+  </div>
+
+  <div class="card">
+    <img src="images/cat1.jpg" alt="cat1">
+    <h3>Bruno</h3>
+    <ul class="pet-info">
+      <li><strong>Age:</strong> 1 Year</li>
+      <li><strong>Gender:</strong> Female</li>
+      <li><strong>Location:</strong> Mumbai</li>
+      <li><strong>Adoption Fee:</strong> ₹1200</li>
+      <li><strong>Vaccinated:</strong> ✅ Yes</li>
+    </ul>
+    <p class="pet-desc">
+      Kitty is calm, affectionate and loves indoor life.
+      She is litter-trained and apartment friendly.
+    </p>
+    <button onclick="selectPet('Bruno')">Adopt Me</button>
+  </div>
+
+
+  <div class="card">
+    <img src="images/cat1.jpg" alt="cat1">
+    <h3>Messy</h3>
+    <ul class="pet-info">
+  <li><strong>Age:</strong> 1 Year</li>
+  <li><strong>Gender:</strong> Female</li>
+  <li><strong>Location:</strong> Mumbai</li>
+  <li><strong>Adoption Fee:</strong> ₹1200</li>
+  <li><strong>Vaccinated:</strong> ✅ Yes</li>
+</ul>
+<p class="pet-desc">
+  Kitty is calm, affectionate and loves indoor spaces.
+  She is litter-trained and ideal for apartment living.
+</p>
+    <button onclick="selectPet('Messy')">Adopt Me</button>
+  </div>
+
+</section>
+
+<section class="adoption">
+  <h2>Adopt a Pet 🐶🐱</h2>
+
+  <form class="adoption-form">
+    
+    <input type="text" id="name" placeholder="Your Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="text" id="pet" placeholder="Pet Name" required>
+
+
+    <select>
+      <option>Select Pet Type</option>
+      <option>Dog</option>
+      <option>Cat</option>
+      <option>Horse</option>
+      <option>Birds</option>
+    </select>
+
+    <textarea placeholder="Why do you want to adopt this pet?"></textarea>
+
+    <button type="submit">Submit Request</button>
+    
+
+  </form>
+</section>
+
+<script>
+const text = "All pets deserve a happy home !! ";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 80);
+  }
+}
+
+typeEffect();
+</script>
+
+
+<footer>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.3" d="M0,192L17.1,176C34.3,160,69,128,103,106.7C137.1,85,171,75,206,106.7C240,139,274,213,309,202.7C342.9,192,377,96,411,96C445.7,96,480,192,514,192C548.6,192,583,96,617,53.3C651.4,11,686,21,720,64C754.3,107,789,181,823,181.3C857.1,181,891,107,926,96C960,85,994,139,1029,160C1062.9,181,1097,171,1131,138.7C1165.7,107,1200,53,1234,48C1268.6,43,1303,85,1337,138.7C1371.4,192,1406,256,1423,288L1440,320L1440,0L1422.9,0C1405.7,0,1371,0,1337,0C1302.9,0,1269,0,1234,0C1200,0,1166,0,1131,0C1097.1,0,1063,0,1029,0C994.3,0,960,0,926,0C891.4,0,857,0,823,0C788.6,0,754,0,720,0C685.7,0,651,0,617,0C582.9,0,549,0,514,0C480,0,446,0,411,0C377.1,0,343,0,309,0C274.3,0,240,0,206,0C171.4,0,137,0,103,0C68.6,0,34,0,17,0L0,0Z"></path></svg>
+<p>© 2025 Pet Adoption Center</p>
+</footer>
+
+</body>
+</html>
